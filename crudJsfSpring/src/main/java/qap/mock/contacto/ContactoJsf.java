@@ -1,18 +1,15 @@
 package qap.mock.contacto;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
 
 /**
  *
  * @author christian
  */
-@ManagedBean(name="contactos") // creado en faces-config
-@SessionScoped
+//@ManagedBean(name="contactos") // creado en faces-config
+//@SessionScoped
 public class ContactoJsf implements Serializable {
     // lista
     private final CrudFilterOptions filter;
