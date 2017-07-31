@@ -7,16 +7,14 @@ import java.util.List;
  *
  * @author christian
  */
-public class ContactoSvc implements IContactoSvc, Serializable {
+public class ContactoSvc implements Serializable {
         
-    @Override
     public String getTestData() {
 
         return "JSF/Primefaces 6.1 + Spring 4.3.10 Integration";
 
     }
     
-    @Override
     public List getItems(String propietario, String modulo) {
         
         return ContactoMock.mockList(propietario, modulo);
