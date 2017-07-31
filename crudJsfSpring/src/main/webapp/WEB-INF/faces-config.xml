@@ -27,10 +27,10 @@
         <managed-bean-name>contactos</managed-bean-name>
         <managed-bean-class>qap.mock.contacto.ContactoJsf</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
-        <!--managed-property>
+        <managed-property>
                 <property-name>svc</property-name>
                 <value>#{contactosSvc}</value>
-        </managed-property-->
+        </managed-property>
     </managed-bean>
     
 </faces-config>

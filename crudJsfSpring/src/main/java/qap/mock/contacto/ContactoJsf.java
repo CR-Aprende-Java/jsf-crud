@@ -11,6 +11,9 @@ import java.util.List;
 //@ManagedBean(name="contactos") // creado en faces-config
 //@SessionScoped
 public class ContactoJsf implements Serializable {
+    //@Autowired //via faces-config
+    ContactoSvc svc; 
+            
     // lista
     private final CrudFilterOptions filter;
     private List items;
@@ -20,14 +23,22 @@ public class ContactoJsf implements Serializable {
         this.filter = filterOptions();
     }
 
+    public void setSvc(ContactoSvc svc) {
+        this.svc = svc;
+    }
+    
+    public String getSvcTestData() {
+        return svc.getTestData();
+    }
+
     public CrudFilterOptions getFilter() {
         return filter;
     }
 
     public List<Contacto> getItems() {
         if (items == null) {
-            items = ContactoMock.mockList("demo", "Alumnos");
-            //items = svc.getItems("demo", "Alumnos");
+            //items = ContactoMock.mockList("demo", "Alumnos");
+            items = svc.getItems("demo", "Alumnos-svc");
         }
         return items;
     }
