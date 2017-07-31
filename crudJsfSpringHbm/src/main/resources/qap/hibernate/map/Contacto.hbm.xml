@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/07/2013 18:35:41 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class lazy="false" name="qap.mock.contacto.Contacto" table="contacto">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="propietario" type="string">
+      <column length="255" name="propietario" not-null="true"/>
+    </property>
+    <property name="modulo" type="string">
+      <column length="255" name="modulo" not-null="true"/>
+    </property>
+    <property name="categoria" type="string">
+      <column length="255" name="categoria"/>
+    </property>
+    <property name="etiqueta" type="string">
+      <column length="255" name="etiqueta"/>
+    </property>
+    <property name="cod" type="string">
+      <column length="255" name="cod" not-null="true"/>
+    </property>
+    <property name="nombreCorto" type="string">
+      <column length="255" name="nombre_corto" not-null="true"/>
+    </property>
+    <property name="nombre" type="string">
+      <column length="255" name="nombre"/>
+    </property>
+    <property name="genero" type="string">
+      <column length="255" name="genero"/>
+    </property>
+    <property name="domicilio" type="string">
+      <column length="255" name="domicilio"/>
+    </property>
+    <property name="localidad" type="string">
+      <column length="255" name="localidad"/>
+    </property>
+    <property name="telefono" type="string">
+      <column length="255" name="telefono"/>
+    </property>
+    <property name="correo" type="string">
+      <column length="255" name="correo"/>
+    </property>
+    <property name="docTipo" type="string">
+      <column length="255" name="doc_tipo"/>
+    </property>
+    <property name="docNro" type="string">
+      <column length="255" name="doc_nro"/>
+    </property>
+    <property name="condIva" type="string">
+      <column length="255" name="cond_iva"/>
+    </property>
+    <property name="notas" type="string">
+      <column name="notas"/>
+    </property>
+    <property name="estado" type="string">
+      <column name="estado" />
+    </property>
+    <property name="fileLink" type="string">
+      <column name="file_link"/>
+    </property>
+  </class>
+</hibernate-mapping>
