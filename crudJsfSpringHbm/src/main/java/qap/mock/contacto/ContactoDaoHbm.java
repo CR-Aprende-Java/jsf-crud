@@ -2,7 +2,7 @@ package qap.mock.contacto;
 
 import java.io.Serializable;
 import java.util.List;
-import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
 
 /**
  *

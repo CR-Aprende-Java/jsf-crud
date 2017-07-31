@@ -60,10 +60,15 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>3.6.10.Final</version>
+            <version>4.3.11.Final</version>
             <type>jar</type>
         </dependency>
-
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-ehcache</artifactId>
+            <version>4.3.11.Final</version>
+        </dependency>
+        
         <!-- MySQL -->
         <dependency>
             <groupId>mysql</groupId>
