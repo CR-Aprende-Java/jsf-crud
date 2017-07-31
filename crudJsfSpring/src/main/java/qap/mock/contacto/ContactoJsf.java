@@ -1,5 +1,6 @@
 package qap.mock.contacto;
 
+import qap.crud.CrudFilterOptions;
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;

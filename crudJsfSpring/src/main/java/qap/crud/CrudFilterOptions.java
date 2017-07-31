@@ -1,4 +1,4 @@
-package qap.mock.contacto;
+package qap.crud;
 
 import java.io.Serializable;
 import java.util.List;
