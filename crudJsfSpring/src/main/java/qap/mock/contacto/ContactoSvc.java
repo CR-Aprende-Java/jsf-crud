@@ -12,7 +12,7 @@ public class ContactoSvc implements IContactoSvc, Serializable {
     @Override
     public String getTestData() {
 
-        return "JSF 2 + Spring 3 Integration";
+        return "JSF/Primefaces 6.1 + Spring 4.3.10 Integration";
 
     }
     
